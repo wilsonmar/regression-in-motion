@@ -71,5 +71,12 @@ ImportError: No module named matplotlib.pyplot
 
 #!/usr/bin/env python3
 
-5) I am using Python 3.6.1
+BTW I am using Python 3.6.1
 
+5) After pip install matplotlib
+
+/usr/local/lib/python2.7/site-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+
+
+6) Should we have used virtualenv?
