@@ -1,0 +1,75 @@
+// Machine Learning in Motion: Regression by Rubin Gumboa
+// Video files for review 2017-06-18
+u1-m1-introduction - pandas, statsmodels.api
+u1-m2-what-just-happened - y=Mx+B
+u1-m3-regression-correlation - capital asset pricing model alpha and beta
+   like a marble - gradient descent
+u1-m4-visualize-solution, 4:33 - fit.predict(x1), predstd confidence lines
+u1-m5-interpret-solution, 2:17 - Alpha = B = 0 is not explained by S&P500 broader market
+u1-m6 ???
+u1-m7-summary.mp4, 2:28 - What is Regression, Core Ideas: Scatterplots, preprocess data
+regression-u2m1.mp4, 4:01 - solving linear regression problems; residuals
+regression-u2m2.mp4, 1:08 - residuals for each slope
+regression-u2m3.mp4, 11:08 - Initial Guess
+regression-u2m4.mp4, 11:10 - step-size to scale slope 1/100000
+regression-u3m1.mp4, 04:17 - How good is the fit?
+regression-u3m2.mp4, 04:52 - Hooke's Law; not linear but parbola? Anscombe's 
+regression-u3m3.mp4, 05:57 - Residuals for Anscombe
+regression-u3m4a.mp4, 06:13 - 
+regression-u3m4b.mp4, 05:10 - r=0.9 good fit; r=0.4 noise; data exponential/not linear
+regression-u3m4c.mp4, 01:00
+regression-u3m4d.mp4, 09:58 - coef. of correlation; avg. temp. vs. altitude; r squared; F-statistic
+   A simple average just as good; 95% range of true values
+regression-u3m5.mp4, 06:02 - outliers
+regression-u3m6.mp4 ???
+regression-u3m7.mp4, 04:09 - Project #2 solution - Python code with refraction linear curve
+regression-u4m1.mp4, 09:05 - Multivariate Regression if rose/drop yesterday, corr() corrcoef()
+    correlogram shows which feature; Project #3 intro
+regression-u4m1a.mp4 ???
+regression-u4m1b.mp4, 04:35 - R coefficients with index array
+regression-u4m2.mp4, 12:32 - 3D charts Y=AX1 + BX2 + C regression plane instead of line
+regression-u4m3.mp4, 13:33 - polonomial regression: Y=A+Bx1+Cx2, X2=X squared, X3=X cubed.
+    like the US National Debt - cubic; dimensionality reduction
+regression-u4m4.mp4, 04:16 - The Myster of the One
+regression-u5m1.mp4, 02:58 - Logistic Regression
+    Project #4-1 tidy data to predict ACT score and High School GPA
+regression-u5m2.mp4, 02:06 - Solution
+regression-u5m3.mp4, 08:55 - odds 1:2 = 1/3 probability; log odds for logistic regression -
+    Project #4-2 - .Logit method to map reals 0-1 (instead of SLS n statsmodel)
+regression-u5m4.mp4, 15:34 - Understanding the Results - Coefficient
+    Graph of probability of acceptance to an Elite University
+    [7:45] code fit.predict(Xs)
+    How to decide if it's a good model?
+regression-u5m5.mp4, 
+??? Is there a "goodbye" segment
+
+-------
+1) I tried to run compute_alpha_beta.py and got these messages:
+
+Traceback (most recent call last):
+  File "compute_alpha_beta.py", line 11, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+
+2) I then did pip install pandas and tried again to get:
+
+Traceback (most recent call last):
+  File "compute_alpha_beta.py", line 12, in <module>
+    import statsmodels.api as sm
+ImportError: No module named statsmodels.api
+
+3) I then did python -mpip install statsmodels
+
+/usr/local/lib/python2.7/site-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+Traceback (most recent call last):
+  File "compute_alpha_beta.py", line 13, in <module>
+    import matplotlib.pyplot as plt
+ImportError: No module named matplotlib.pyplot
+
+4) Googling I found : https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot
+
+#!/usr/bin/env python3
+
+5) I am using Python 3.6.1
+
